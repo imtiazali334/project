@@ -1,0 +1,58 @@
+<!-- <table>
+  <h2>Employees List</h2>
+  <ul *ngFor='let employees of employees'>
+    <table border="2px">
+      <tr>
+        <td>{{employees.id}}</td>
+    <td>{{employees.name}}</td>
+    <td>{{employees.age}}</td>
+    </tr>
+    </table>
+  </ul>
+</table> -->
+<div class="jumbotron">
+  
+    <div class="container-fluid">
+        <table class="table" >
+            <thead>
+              <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>age</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor='let employees of employees'>
+                <td>{{employees.id}}</td>
+                <td>{{employees.name}}</td>
+                <td>{{employees.age}}</td>
+              </tr>
+              <!-- <tr>
+                  <td>windows Xp</td>
+                  <td>jan-15-2010</td>
+                  <td>15000</td>
+                </tr>
+                <tr>
+                    <td>windows Xp</td>
+                    <td>jan-15-2010</td>
+                    <td>15000</td>
+                  </tr>
+                  <tr>
+                      <td>windows Xp</td>
+                      <td>jan-15-2010</td>
+                      <td>15000</td>
+                    </tr>
+                    <tr>
+                        <td>windows Xp</td>
+                        <td>jan-15-2010</td>
+                        <td>15000</td>
+                      </tr>
+                      <tr>
+                          <td>windows Xp</td>
+                          <td>jan-15-2010</td>
+                          <td>15000</td>
+                        </tr> -->
+            </tbody>
+          </table>
+    </div>
+  </div>
