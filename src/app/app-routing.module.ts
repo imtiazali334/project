@@ -21,10 +21,13 @@ import { ServicesListComponent } from './services-list/services-list.component';
 const routes: Routes =[
   {path:'home',component : HomeComponent},
   {path : 'About', component : AboutComponent},
-  {path:'Services', component : ServicesComponent},
+  {path:'Services', component : ServicesComponent,children:[
+    {path:'servicelist',component : ServicesListComponent}
+  ]},
   {path : 'Products', component : ProductsComponent},
   {path:'Career',component : CareerComponent},
   {path : 'Contact', component : ContactComponent},
+  
   {path:'',component :HomeComponent}
  
 ]
